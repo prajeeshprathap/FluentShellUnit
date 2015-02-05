@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FluentShellUnit</id>
+    <version>1.0.0.0</version>
+    <title>Unit test framework - PowerShell</title>
+    <authors>Prajeesh Prathap</authors>
+    <owners>Prajeesh Prathap</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A fluent interface based powershell unit testing framework.</description>
+    <releaseNotes>
+      The first release includes the functionalities to support unit testing powershell modules from C#
+      The following functionalities are supported
+      - Stubs for powershell cmdlets and functions exposed via modules, scripts etc.
+      - Stubs from script blocks
+    </releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>PowerShell, Unit test</tags>
+  </metadata>
+  <files>
+    <file src="..\bin\debug\FluentShellUnit.dll" target="lib\net45" />
+  </files>
+</package>
