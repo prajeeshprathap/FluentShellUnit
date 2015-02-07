@@ -5,3 +5,4 @@ Further reading and resources </h2>
 <p />
 
 <a href='http://blogsprajeesh.blogspot.nl/2015/02/introducing-fluentshellunit-unit.html'>Introducing FluentShellUnit - A unit testing framework for PowerShell in C#</a>
+<a href='http://blogsprajeesh.blogspot.nl/2015/02/fluentshellunit-create-dummy-object.html'>FluentShellUnit - Creating a dummy </a>
