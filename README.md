@@ -1,3 +1,7 @@
-FluentShellUnit is a framework to execute unit tests in C# for testing PowerShell modules and scripts. FluentShellUnit is the only powershell testing framework written in C#, that allows you to stub any cmdlet or functions in a module using a scriptblock that can simulate the behaviour of the cmdlet or function. FluentShellUnit helps developers maintain the PowerShell projects in Visual studio IDE and execute tests as part of the build process, thus bringing the teams one step closer to CI.
+<p>FluentShellUnit is a unit testing framework of testing PowerShell scripts and modules. It provides a simple to use API to write your tests in C# for loading and executing the functions in a PowerShell module or script file. It follows a very easy approach to stub the existing cmdlets or functions so that you can easily isolate your test code. This makes it a very good candidate for teams practicing TDD and using PowerShell in their code base. 
+</p>
+<h2>
+Further reading and resources </h2>
+<p />
 
-Further reading and resources
+<a href='http://blogsprajeesh.blogspot.nl/2015/02/introducing-fluentshellunit-unit.html'>Introducing FluentShellUnit - A unit testing framework for PowerShell in C#</a>
