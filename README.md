@@ -7,3 +7,5 @@ Further reading and resources </h2>
 <a href='http://blogsprajeesh.blogspot.nl/2015/02/introducing-fluentshellunit-unit.html'>Introducing FluentShellUnit - A unit testing framework for PowerShell in C#</a>
 <br />
 <a href='http://blogsprajeesh.blogspot.nl/2015/02/fluentshellunit-create-dummy-object.html'>FluentShellUnit - Creating a dummy </a>
+<br />
+<a href='http://blogsprajeesh.blogspot.nl/2015/02/fluentshellunit-create-stub-from-script.html'>FluentShellUnit - Creating a stub from scriptblock</a>
