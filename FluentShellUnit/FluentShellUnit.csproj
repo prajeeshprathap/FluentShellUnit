@@ -66,10 +66,12 @@
     <Compile Include="HostState.cs" />
     <Compile Include="IPsType.cs" />
     <Compile Include="PsBase.cs" />
+    <Compile Include="PsCodeMethod.cs" />
     <Compile Include="PsFactory.cs" />
     <Compile Include="PsModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PsHost.cs" />
+    <Compile Include="PSObjectExtensions.cs" />
     <Compile Include="PsProxy.cs" />
     <Compile Include="PsScript.cs" />
     <Compile Include="TestContextAuthorizationManager.cs" />
