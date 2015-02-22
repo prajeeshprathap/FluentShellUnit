@@ -9,3 +9,4 @@ Further reading and resources </h2>
 <a href='http://blogsprajeesh.blogspot.nl/2015/02/fluentshellunit-create-dummy-object.html'>FluentShellUnit - Creating a dummy </a>
 <br />
 <a href='http://blogsprajeesh.blogspot.nl/2015/02/fluentshellunit-create-stub-from-script.html'>FluentShellUnit - Creating a stub from scriptblock</a>
+<a href='http://blogsprajeesh.blogspot.nl/2015/02/create-stub-objects-as-arguments-for.html'>FluentShellUnit - Pass a stub as argument to SUT</a>
