@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>FluentShellUnit</id>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
     <title>Unit test framework - PowerShell</title>
     <authors>Prajeesh Prathap</authors>
     <owners>Prajeesh Prathap</owners>
@@ -13,6 +13,8 @@
       The following functionalities are supported
       - Stubs for powershell cmdlets and functions exposed via modules, scripts etc.
       - Stubs from script blocks
+      1.0.1.0
+      Added new functionality to pass stubs as arguments to SUT
     </releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>PowerShell, Unit test</tags>

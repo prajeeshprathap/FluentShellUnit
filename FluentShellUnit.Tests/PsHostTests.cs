@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Management.Automation;
+using System.Management.Automation.Runspaces;
 using System.Xml;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -33,6 +35,32 @@ namespace FluentShellUnit.Tests
 
         [TestMethod]
         [TestCategory("Framework UnitTest")]
+        public void StubMethod_can_add_methods_to_a_psobject_implementation()
+        {
+            var webApplication = new PSObject();
+            var iisSettings = new PSObject();
+            var path = @"C:\MyWeb\wss\mywebapp";
+            iisSettings.StubProperty("Path", path);
+            webApplication.StubMethod("GetIisSettingsWithFallback", objects => objects[0].ToString() == "Default" ? iisSettings : null);
+            
+            var actual = PsFactory.Create(HostState.Core)
+                .FailOnNonTerminatingError()
+                .Load(@"TestModule\Modules\TestModule.psm1")
+                .Execute
+                (
+                    "Get-VirtualDirectoryForWebApp",
+                    new Dictionary<string, object>
+                    {
+                        {"WebApplication", webApplication},
+                        {"Zone", "Default"}
+                    }
+                )
+                .FirstResultItemAs<string>();
+            Assert.IsTrue(actual == path);
+        }
+
+        [TestMethod]
+        [TestCategory("Framework UnitTest")]
         public void SetGlobalVariable_sets_a_global_variable_in_scope()
         {
             var actual = PsFactory.Create(HostState.Core).SetGlobalVariable("test", "test1");
@@ -56,8 +84,6 @@ namespace FluentShellUnit.Tests
                 .FirstResultItemAs<XmlDocument>();
             Assert.IsTrue(actual != null);
         }
-
-
 
         [TestMethod]
         [TestCategory("Framework UnitTest")]

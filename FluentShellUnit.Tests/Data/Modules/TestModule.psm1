@@ -5,6 +5,17 @@ Function Get-WelcomeMessage{
 	#return "Welcome from context {0}" -f $context
 }
 
+Function Get-VirtualDirectoryForWebApp
+{
+	param
+	(
+		$WebApplication,
+		[String] $Zone
+	)
+	$path = $Webapplication.GetIisSettingsWithFallback($Zone).Path
+	$path
+}
+
 Function Get-HelloMessage{
 	param([string] $context)	
 	return "Hello from context {0}" -f $context

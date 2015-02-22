@@ -1,4 +1,6 @@
-﻿namespace FluentShellUnit
+﻿using System.Management.Automation;
+
+namespace FluentShellUnit
 {
     public class PsFactory
     {
@@ -11,6 +13,5 @@
         {
             return new PsHost(context);
         }
-
     }
 }
